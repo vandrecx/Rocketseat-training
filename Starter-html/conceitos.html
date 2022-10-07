@@ -1,0 +1,139 @@
+<!--
+    Anatomia das tags
+
+    -Abertura da tag
+    -Fechamento de tag
+    -Contéudo
+    -Elementos
+-->
+<h1>
+    O título
+</h1>
+
+<!--Elementos Vazios-->
+<!--Elementos que não precisam de abertura ou fechamento-->
+<img src="" alt="">
+<input type="text">
+
+<!--
+    Atributos HTML
+    -Informações extras
+    -Configurações
+-->
+<img src="" alt="">
+
+<!--
+    Atributos Boleanos
+    -não pprecisam de conteúdo
+-->
+<input type="text">
+
+<!--
+    Aspas
+    - omissão
+    - simples
+    - duplas(boas praticas)
+-->
+
+<a href="https://google.com">link</a>
+
+<!--
+    Atributos globais
+    - class
+    - contenteditable (editar o texto)
+    - data-* (expandir a classe)
+    - hidden (esconder o texto)
+    - id (só pode usar uma vez e pode dar problema caso use mais de uma)
+    - style (cores e estilização)
+    - tabindex (ordem que aparece quando se aperta tab)
+    - title (nao muda em termos de visualização
+    mas quando o mouse descansa em cima do texto aparece)
+-->
+
+<div class="carrinho" contenteditable="true" id="cart1" tabindex="1">
+    conteudo
+    <!--Elementos aqui dentro que vão classificar o carrinho-->
+</div> 
+
+<div class="carrinho" data-id="" id="cart2" style="color: red" tabindex="2"> 
+    conteudo
+    <!--Elementos aqui dentro que vão classificar o carrinho-->
+</div>
+
+<div class="carrinho" tabindex="3">
+    conteudo
+    <!--Elementos aqui dentro que vão classificar o carrinho-->
+</div>
+
+<div tabindex="4">
+    conteudo
+</div>
+
+<div title="vasco da gama">
+    conteudo
+</div>
+
+<!--developer.mozilla.org ir atras de mais atributos globais-->
+
+<!--
+    Aninhamento de tags
+    -Hierarquia (<p> filha da <div> e <em> filha do <p>)
+    -Fluxo
+    -Posicionamento dos elementos
+-->
+
+<div>
+    <p>
+    Vou <em>escrever</em> um paragrafo</p>
+</div>
+
+<p>
+    Vou <em>escrever</em> um paragrafo
+</p>
+
+<p>
+    Este é um novo parágrafo
+</p>
+
+<!--O <p> realiza uma quebra de linha, elementos escritos dentro dele
+ mesmo que seja pressionado enter nao vao possuir a quebra de linha
+ao menos que <p> seja chamado novamente ou pode usar o comando <br/>
+que dá break na linha-->
+
+<p> 
+    Esse é um texto
+    <p>Aqui outro texto</p>
+</p>
+
+<p>
+    <a href="">Esse</a>
+    é um texto
+    <p>Aqui outro texto</p>
+</p>
+
+<!--
+    Conteúdo do texto e
+    caracteres reservados.
+
+    &nbsp;= abre um espaço
+    <br>= break//quebra de linha
+
+    <> são caracteres reservados (&lt; &gt;)
+    & é um caractere reservado (&amp;)
+    "" também é um caractere reservado (&quot;)
+    '' (&apost;)
+-->
+
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    os espaços 
+    <br>
+    que colocamos
+    <br>
+    além das quebras de linha sao
+    ignorados
+</p>
+
+
+
+
